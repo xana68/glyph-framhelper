@@ -1,0 +1,8 @@
+#outdated
+  %h6
+    = t('outdatedbrowser.please_note')
+  %p
+    = t('outdatedbrowser.we_recommend_download')
+    = link_to t('outdatedbrowser.download'), "http://outdatedbrowser.com", id: "btnUpdate"
+    = link_to "#", id: "btnClose" do
+      = fa_icon 'times'

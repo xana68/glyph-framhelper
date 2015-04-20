@@ -1,0 +1,94 @@
+//***************************************************************
+//    Imports
+//***************************************************************
+// --- Importing Bootstrap variables for colors and orther --- //
+@import "bootstrap-variables"
+
+// ------------------------ Compass  ------------------------- //
+@import "compass/css3/text-shadow"
+
+
+
+*:first-child + html .magic-menu
+  zoom: 1 
+
+.magic-menu  
+  margin-bottom: 15px
+  position: relative !important
+  &:after
+    visibility: hidden 
+    display: block 
+    content: "" 
+    clear: both 
+    height: 0 
+
+  .magic-line
+    position: absolute !important
+    bottom: -17px 
+    left: 0 
+    display: block !important
+    text-align: center !important
+    z-index: 1
+    i
+      color: $nav-tabs-border-color
+
+  // OVERRIDE BOOTSTRAP TABS
+  &.nav-tabs > li > a
+    border: none
+    border-bottom: 1px solid $nav-tabs-border-color
+    +border-radius(0)
+
+  &.nav-tabs-justified > .active > a, 
+  &.nav-tabs.nav-justified > .active > a, 
+  &.nav-tabs-justified > .active > a:hover, 
+  &.nav-tabs.nav-justified > .active > a:hover, 
+  &.nav-tabs-justified > .active > a:focus, 
+  &.nav-tabs.nav-justified > .active > a:focus  
+    border: none
+    border-bottom: 1px solid $nav-tabs-border-color
+
+  &.nav > li > a:hover, 
+  &.nav > li > a:focus  
+    background-color: transparent
+
+  &.nav-tabs > li.active > a, 
+  &.nav-tabs > li.active > a:hover, 
+  &.nav-tabs > li.active > a:focus
+    border: none
+    border-bottom: 1px solid $nav-tabs-border-color
+    background-color: $body-bg
+  
+  &.magic-menu-below   
+    margin-top: 15px 
+    margin-bottom: 0
+    .magic-line
+      bottom: 0
+      top: -18px
+
+    &.nav-tabs > li > a
+      border: none
+      border-top: 1px solid $nav-tabs-border-color
+      +border-radius(0)
+
+    &.nav-tabs > li.active > a, 
+    &.nav-tabs > li.active > a:hover, 
+    &.nav-tabs > li.active > a:focus
+      border: none
+      border-top: 1px solid $nav-tabs-border-color
+
+    &.nav-tabs-justified > .active > a, 
+    &.nav-tabs.nav-justified > .active > a, 
+    &.nav-tabs-justified > .active > a:hover, 
+    &.nav-tabs.nav-justified > .active > a:hover, 
+    &.nav-tabs-justified > .active > a:focus, 
+    &.nav-tabs.nav-justified > .active > a:focus  
+      border: none
+      border-top: 1px solid $nav-tabs-border-color
+
+  &.magic-menu-inverse
+    margin-bottom: 0
+    .magic-line
+      bottom: -8px 
+      i
+        color: $navbar-default-link-color
+        margin-top: -5px

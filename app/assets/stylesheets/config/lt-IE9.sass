@@ -1,0 +1,47 @@
+//***************************************************************
+//    Bootstrap Overriding
+//***************************************************************
+// ------------------------ Form  ------------------------- //
+.input-block-level
+  min-height: 20px
+
+@mixin ie-pie
+  behavior: url("PIE.htc")
+
+.img-circle,
+.img-rounded,
+.img-thumbnail,
+.table-bordered,
+.input-group-addon,
+.btn,
+.dropdown-menu,
+.panel,
+.well,
+.nav-tabs > li > a,
+.nav-pills > li > a,
+.navbar,
+.navbar-nav > li > a,
+.navbar-toggle,
+.navbar-toggle .icon-bar,
+.breadcrumb,
+.pagination,
+.pager li > a,.pager li > span,
+.modal-content,
+.tooltip-inner,
+.popover,
+.popover-title,
+.alert,
+.thumbnail,.img-thumbnail,
+.label,
+.badge,
+.progress,
+.carousel-indicators li,
+.jumbotron
+  +ie-pie
+  
+.navbar-right
+  float: right
+
+.navbar-nav > li  
+  float: left    
+    

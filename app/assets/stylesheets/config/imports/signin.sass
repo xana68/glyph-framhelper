@@ -1,0 +1,80 @@
+//***************************************************************
+//    Imports
+//***************************************************************
+// --- Importing Bootstrap variables for colors and orther --- //
+@import "bootstrap-variables"
+
+// ------------------------ Compass  ------------------------- //
+@import "compass/css3/text-shadow"
+
+//***************************************************************
+//    Connection
+//***************************************************************
+
+body[class^="devise"]
+  background-color: darken(white, 2%)
+
+$gray-light: #eee
+
+#form-signin
+  height: 80%
+
+.form-signin
+  width: 100%
+  margin: 0 15px
+  padding: 30px
+  background-color: white
+  border: 1px solid $gray-light
+  +box-shadow(0 0 3px $gray-light)
+  .form-signin-heading
+    font-weight: 400
+    font-size: 24px
+    color: #585f69
+    text-align: center
+    margin: 0
+    
+  .input-group-addon
+    background-color: transparent
+    +border-radius(0)
+    i
+      width: 15px
+
+  .form-control
+    +border-radius(0)
+
+  .form-group.boolean
+    +clearfix
+    label
+      font-weight: 400
+      margin-bottom: 0
+      padding-left: 15px
+    .checkbox-icon  
+      margin-right: 8px
+
+  .form-signin-info
+    margin-top: 15px
+    margin-bottom: 0
+    font-size: 12px 
+
+  h3.form-signin-heading
+    font-size: 18px
+    text-align: left
+  hr
+    margin-top: 15px
+    margin-bottom: 15px       
+
+  .help-block
+    font-size: 0.9em
+    text-align: justify
+
+  .btn
+    +border-radius(0)
+
+@media (min-width: $screen-sm-min)
+  .form-signin
+    width: 450px
+    margin: 0
+
+@media (min-width: $screen-lg-min)
+  .form-signin
+    width: 550px

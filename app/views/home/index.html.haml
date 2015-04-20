@@ -1,0 +1,1310 @@
+.container
+  %section.example#buttons-example
+    .row
+      .col-xs-12.col-md-3
+        .headline.headline-primary
+          %h2 Buttons 
+        %button.btn.btn-default.btn-block{type: "button"} Default
+        %button.btn.btn-primary.btn-block{type: "button"} Primary
+        %button.btn.btn-success.btn-block{type: "button"} Success
+        %button.btn.btn-danger.btn-block{type: "button"} Danger
+        %button.btn.btn-info.btn-block{type: "button"} Info
+        %button.btn.btn-warning.btn-block{type: "button"} Warning
+        %button.btn.btn-link.btn-block{type: "button"} Link
+
+      .col-xs-12.col-md-3
+        .headline.headline-primary
+          %h2 Inversed buttons
+        %button.btn.btn-default.btn-block.btn-inverse{type: "button"} Default  
+        %button.btn.btn-primary.btn-block.btn-inverse{type: "button"} Primary
+        %button.btn.btn-success.btn-block.btn-inverse{type: "button"} Success
+        %button.btn.btn-info.btn-block.btn-inverse{type: "button"} Info  
+        %button.btn.btn-warning.btn-block.btn-inverse{type: "button"} Warning  
+        %button.btn.btn-danger.btn-block.btn-inverse{type: "button"} Danger  
+
+      .col-xs-12.col-md-6
+        .headline.headline-primary
+          %h2 Button Groups
+        .row
+          .col-xs-6.col-md-4
+            .btn-group
+              %button.btn.btn-default{type: "button"}
+                = fa_icon 'align-left'
+              %button.btn.btn-default{type: "button"}
+                = fa_icon 'align-center'
+              %button.btn.btn-default{type: "button"}
+                = fa_icon 'align-right'
+            .clearfix
+            .btn-group
+              %button.btn.btn-primary.btn-inverse{type: "button"}
+                = fa_icon 'align-left'
+              %button.btn.btn-primary.btn-inverse{type: "button"}
+                = fa_icon 'align-center'
+              %button.btn.btn-primary.btn-inverse{type: "button"}
+                = fa_icon 'align-right'
+            .clearfix    
+            .btn-group
+              %button.btn.btn-success{type: "button"}
+                = fa_icon 'align-left'
+              %button.btn.btn-success{type: "button"}
+                = fa_icon 'align-center'
+              %button.btn.btn-success{type: "button"}
+                = fa_icon 'align-right'
+            .clearfix
+            .btn-group
+              %button.btn.btn-info{type: "button"}
+                = fa_icon 'align-left'
+              %button.btn.btn-info{type: "button"}
+                = fa_icon 'align-center'
+              %button.btn.btn-info{type: "button"}
+                = fa_icon 'align-right'
+            .clearfix
+            .btn-group
+              %button.btn.btn-warning.btn-inverse{type: "button"}
+                = fa_icon 'align-left'
+              %button.btn.btn-warning.btn-inverse{type: "button"}
+                = fa_icon 'align-center'
+              %button.btn.btn-warning.btn-inverse{type: "button"}
+                = fa_icon 'align-right'
+            .clearfix
+            .btn-group
+              %button.btn.btn-danger{type: "button"}
+                = fa_icon 'align-left'
+              %button.btn.btn-danger{type: "button"}
+                = fa_icon 'align-center'
+              %button.btn.btn-danger{type: "button"}
+                = fa_icon 'align-right'   
+            .clearfix
+
+          .col-xs-3.col-md-2
+            .btn-group-vertical
+              %button.btn.btn-default{type: "button"}
+                = fa_icon 'home'
+              %button.btn.btn-default{type: "button"}
+                = fa_icon 'user'
+              %button.btn.btn-default{type: "button"}
+                = fa_icon 'comment'
+              %button.btn.btn-default{type: "button"}
+                = fa_icon 'cog'
+
+            .btn-group-vertical
+              %button.btn.btn-primary{type: "button"}
+                = fa_icon 'home'
+              %button.btn.btn-primary{type: "button"}
+                = fa_icon 'user'
+              %button.btn.btn-primary{type: "button"}
+                = fa_icon 'comment'
+              %button.btn.btn-primary{type: "button"}
+                = fa_icon 'cog'
+
+          .col-xs-3.col-md-2
+            .btn-group-vertical
+              %button.btn.btn-success.btn-inverse{type: "button"}
+                = fa_icon 'home'
+              %button.btn.btn-success.btn-inverse{type: "button"}
+                = fa_icon 'user'
+              %button.btn.btn-success.btn-inverse{type: "button"}
+                = fa_icon 'comment'
+              %button.btn.btn-success.btn-inverse{type: "button"}
+                = fa_icon 'cog'
+
+            .btn-group-vertical
+              %button.btn.btn-info{type: "button"}
+                = fa_icon 'home'
+              %button.btn.btn-info{type: "button"}
+                = fa_icon 'user'
+              %button.btn.btn-info{type: "button"}
+                = fa_icon 'comment'
+              %button.btn.btn-info{type: "button"}
+                = fa_icon 'cog'
+
+          .col-xs-3.col-md-2
+            .btn-group-vertical
+              %button.btn.btn-warning.btn-inverse{type: "button"}
+                = fa_icon 'home'
+              %button.btn.btn-warning.btn-inverse{type: "button"}
+                = fa_icon 'user'
+              %button.btn.btn-warning.btn-inverse{type: "button"}
+                = fa_icon 'comment'
+              %button.btn.btn-warning.btn-inverse{type: "button"}
+                = fa_icon 'cog'
+          
+            .btn-group-vertical
+              %button.btn.btn-danger.btn-inverse{type: "button"}
+                = fa_icon 'home'
+              %button.btn.btn-danger.btn-inverse{type: "button"}
+                = fa_icon 'user'
+              %button.btn.btn-danger.btn-inverse{type: "button"}
+                = fa_icon 'comment'
+              %button.btn.btn-danger.btn-inverse{type: "button"}
+                = fa_icon 'cog'
+
+    .row
+      .col-xs-12
+        .headline.headline-primary
+          %h2
+            Button Dropdowns
+      .col-xs-4.col-md-2
+        .btn-group.btn-dropdown
+          %button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            Default
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-xs-4.col-md-2 
+        .btn-group.btn-dropdown
+          %button.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            Primary
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-xs-4.col-md-2 
+        .btn-group.btn-dropdown
+          %button.btn.btn-success.dropdown-toggle.btn-inverse{"data-toggle" => "dropdown", type: "button"}
+            Success
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group.btn-dropdown
+          %button.btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            Info
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group.btn-dropdown
+          %button.btn.btn-warning.dropdown-toggle.btn-inverse{"data-toggle" => "dropdown", type: "button"}
+            Warning
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group.btn-dropdown
+          %button.btn.btn-danger.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            Danger
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+    .row
+      .col-md-2        
+        .btn-group
+          %button.btn.btn-default{type: "button"} Default
+          %button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+            %span.sr-only Toggle Dropdown
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group
+          %button.btn.btn-primary.btn-inverse{type: "button"} Primary
+          %button.btn.btn-primary.dropdown-toggle.btn-inverse{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+            %span.sr-only Toggle Dropdown
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group
+          %button.btn.btn-success{type: "button"} Success
+          %button.btn.btn-success.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+            %span.sr-only Toggle Dropdown
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group
+          %button.btn.btn-info.btn-inverse{type: "button"} Info
+          %button.btn.btn-info.dropdown-toggle.btn-inverse{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+            %span.sr-only Toggle Dropdown
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group
+          %button.btn.btn-warning{type: "button"} Warning
+          %button.btn.btn-warning.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+            %span.sr-only Toggle Dropdown
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+      .col-md-2        
+        .btn-group
+          %button.btn.btn-danger{type: "button"} Danger
+          %button.btn.btn-danger.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+            %span.sr-only Toggle Dropdown
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider
+            %li
+              %a{href: "#"} Separated link
+
+  /
+    Dropdowns
+    \==================================================        
+  .example    
+    .row
+      .col-md-4
+        .headline.headline-primary
+          %h2 Dropdowns
+
+        .dropdown 
+          %button.btn.btn-default{ data: { toggle: "dropdown" } }
+            Dropdowns
+            %b.caret  
+          %ul.dropdown-menu{role: "menu"}
+            %li.dropdown-header Setting
+            %li{role: "presentation"}
+              %a{href: "#", role: "menuitem", tabindex: "-1"} Action
+            %li.disabled{role: "presentation"}
+              %a{href: "#", role: "menuitem", tabindex: "-1"} Another action
+            %li.dropdown-submenu
+              %a{href: "#"} Something else here
+              %ul.dropdown-menu
+                %li
+                  %a{href: "#"} Action1
+                %li
+                  %a{href: "#"} Action2
+                %li
+                  %a{href: "#"} Another action
+                %li
+                  %a{href: "#"} Something else here
+                %li.divider
+                %li
+                  %a{href: "#"} Separated link
+            %li.divider{role: "presentation"}
+            %li{role: "presentation"}
+              %a{href: "#", role: "menuitem", tabindex: "-1"} Separated link
+
+      .col-md-4
+        .headline.headline-primary
+          %h2
+            %a{ href: "https://github.com/CWSpear/bootstrap-hover-dropdown", target: "_blank" }
+              = fa_icon 'external-link'
+              Dropdown hover
+
+        .dropdown 
+          %button.btn.btn-default{ data: { toggle: "dropdown", hover: "dropdown", delay: "100" } }
+            Dropdowns on hover
+            %b.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li.dropdown-header Setting
+            %li{role: "presentation"}
+              %a{href: "#", role: "menuitem", tabindex: "-1"} Action
+            %li.disabled{role: "presentation"}
+              %a{href: "#", role: "menuitem", tabindex: "-1"} Another action
+            %li.dropdown-submenu
+              %a{href: "#"} Something else here
+              %ul.dropdown-menu
+                %li
+                  %a{href: "#"} Action1
+                %li
+                  %a{href: "#"} Action2
+                %li
+                  %a{href: "#"} Another action
+                %li
+                  %a{href: "#"} Something else here
+                %li.divider
+                %li
+                  %a{href: "#"} Separated link
+            %li.divider{role: "presentation"}
+            %li{role: "presentation"}
+              %a{href: "#", role: "menuitem", tabindex: "-1"} Separated link
+
+      .col-md-4
+        .headline.headline-primary
+          %h2
+            Annimated Dropdown 
+            
+        .dropdown
+          %a.btn.btn-default{ href: "#" }
+            Annimated Dropdown
+            %b.caret
+          %ul.dropdown-annimated
+            %li.dropdown-item
+              %a.dropdown-btn{ href: "#", role: "menuitem", tabindex: "-1" } Action1
+            %li.dropdown-item
+              %a.dropdown-btn{ href: "#", role: "menuitem", tabindex: "-1" } Action2
+            %li.dropdown-item
+              %a.dropdown-btn{ href: "#", role: "menuitem", tabindex: "-1" } Another action
+            %li.dropdown-item.dropdown-submenu
+              %a.dropdown-btn{ href: "#", role: "menuitem", tabindex: "-1" } Something else here
+              %ul.dropdown-menu
+                %li
+                  %a{href: "#"} Action1
+                %li
+                  %a{href: "#"} Action2
+                %li
+                  %a{href: "#"} Another action
+                %li
+                  %a{href: "#"} Something else here
+                %li.divider
+                %li
+                  %a{href: "#"} Separated link              
+  /
+    Links
+    \==================================================
+  .example
+    .headline.headline-info
+      %h2 Links
+    .row
+      .col-md-3
+        .panel.panel-default
+          .panel-heading
+            Default link
+          .panel-body
+            = link_to "Link", "#", class: ""
+
+        .panel.panel-info
+          .panel-heading
+            = fa_icon 'exclamation'
+            Juste for no-touch
+          .panel-body  
+            = link_to "sliding-middle-out", "#", class: "sliding-middle-out"  
+       
+      .col-md-3
+        .panel.panel-default
+          .panel-heading
+            Default image link
+          .panel-body
+            = link_to "#", class: "link-img" do
+              %img{ :"data-src" => "holder.js/100%x100%", alt: "100%x100%", src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk1IiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE5MHgxNDA8L3RleHQ+PC9zdmc+", style: "height: 100%; width: 100%; display: block;" }
+
+      .col-md-3
+        .panel.panel-info
+          .panel-heading
+            = fa_icon 'exclamation'
+            Juste for no-touch
+          .panel-body  
+            = link_to "#", class: "link-img with-icon" do
+              = fa_stacked_icon "link inverse", base: "square", class: "icon-link"
+              %img{ :"data-src" => "holder.js/100%x100%", alt: "100%x100%", src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk1IiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE5MHgxNDA8L3RleHQ+PC9zdmc+", style: "height: 100%; width: 100%; display: block;" }    
+
+      .col-md-3
+        .panel.panel-info
+          .panel-heading
+            = fa_icon 'exclamation'
+            Juste for no-touch
+          .panel-body  
+            = link_to "#", class: "link-img zoomer" do
+              .overlay-zoom
+                .overlay-icon
+                  = fa_icon "search"
+                %img{ :"data-src" => "holder.js/100%x170", alt: "100%x170", src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk1IiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE5MHgxNDA8L3RleHQ+PC9zdmc+", style: "height: 100%; width: 100%; display: block;" }    
+
+  / 
+    Labels, Badges
+    \==================================================
+  .example
+    .row
+      .col-md-6
+        /
+          Labels
+          \==================================================
+        .headline.headline-info
+          %h2 Labels
+        %span.label.label-default Default
+        %span.label.label-primary Primary
+        %span.label.label-success Success
+        %span.label.label-info Info
+        %span.label.label-warning Warning
+        %span.label.label-danger Danger
+        .clearfix
+        %h3 Inverse
+        %span.label.label-default.label-inverse Default
+        %span.label.label-primary.label-inverse Primary
+        %span.label.label-success.label-inverse Success
+        %span.label.label-info.label-inverse Info
+        %span.label.label-warning.label-inverse Warning
+        %span.label.label-danger.label-inverse Danger
+
+      .col-md-6
+        /
+          Badges
+          \==================================================
+        .headline.headline-info
+          %h2 Badges
+        %span.badge.badge-default Default
+        %span.badge.badge-primary Primary
+        %span.badge.badge-success Success
+        %span.badge.badge-info Info
+        %span.badge.badge-warning Warning
+        %span.badge.badge-danger Danger
+        .clearfix
+        %h3
+          Inverse
+        %span.badge.badge-default.badge-inverse Default
+        %span.badge.badge-primary.badge-inverse Primary
+        %span.badge.badge-success.badge-inverse Success
+        %span.badge.badge-info.badge-inverse Info
+        %span.badge.badge-warning.badge-inverse Warning
+        %span.badge.badge-danger.badge-inverse Danger  
+  / 
+    Nav
+    \==================================================
+  .example
+    .headline.headline-warning
+      %h2 Breadcrumbs
+    .row
+      .col-md-4
+        %ol.breadcrumb
+          %li
+            %a{href: "#"} Home
+          %li
+            %a{href: "#"} Library
+          %li.active Data
+      .col-md-4
+        %ol.breadcrumb.breadcrumb-arrow
+          %li
+            %a{href: "#"} Home
+          %li
+            %a{href: "#"} Library
+          %li.active
+            %span Data
+      .col-md-4
+        %ol.breadcrumb.breadcrumb-arrow
+          %li
+            %a{href: "#"}
+              = fa_icon 'home'
+              Home
+          %li
+            %a{href: "#"}
+              = fa_icon 'list'
+              Library
+          %li.active
+            %span
+              = fa_icon 'calendar'
+              Data
+  /
+    Tabs
+    \==================================================
+  .example
+    .headline.headline-warning
+      %h2 Tabs
+    .row
+      .col-md-6
+        %ul#myTab1.nav.nav-tabs.nav-justified.magic-menu
+          %li.magic-line
+            = fa_icon 'caret-down 2x'
+          
+          %li.active
+            %a{"data-toggle" => "tab", href: "#home1"} Home
+          %li
+            %a{"data-toggle" => "tab", href: "#profile1"} Profile
+          %li
+            %a{"data-toggle" => "tab", href: "#other1"} Other
+            
+
+        #myTabContent.tab-content
+          #home1.tab-pane.fade.active.in
+            %p Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+          #profile1.tab-pane.fade
+            %p Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
+          #other1.tab-pane.fade
+            %p Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...
+          
+      .col-md-6
+        
+        #myTabContent.tab-content
+          #home2.tab-pane.fade.active.in
+            %p Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+          #profile2.tab-pane.fade
+            %p Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
+          #other2.tab-pane.fade
+            %p Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...
+          
+        %ul#myTab2.nav.nav-tabs.nav-justified.magic-menu.magic-menu-below
+          %li.magic-line
+            = fa_icon 'caret-up 2x'
+          %li.active
+            %a{"data-toggle" => "tab", href: "#home2"} Home
+          %li
+            %a{"data-toggle" => "tab", href: "#profile2"} Profile
+          %li
+            %a{"data-toggle" => "tab", href: "#other2"} Other
+
+  /
+    Navbar
+    \==================================================
+  .example
+    .headline.headline-warning
+      %h2 Navbar 
+    .row
+      .col-md-12
+        %nav.navbar.navbar-default{role: "navigation"}
+          .container-fluid
+            / Brand and toggle get grouped for better mobile display
+            .navbar-header
+              %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+                %span.sr-only Toggle navigation
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a.navbar-brand{href: "#"} Brand
+            / Collect the nav links, forms, and other content for toggling
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+              %ul.nav.navbar-nav.magic-menu.magic-menu-inverse
+                %li.magic-line
+                  = fa_icon "caret-up"
+                %li.active
+                  %a{href: "#"} Link
+                %li
+                  %a{href: "#"} Link
+                %li
+                  %a{href: "#"} Link
+                %li
+                  %a{href: "#"} Link    
+                %li.dropdown
+                  %a{"data-toggle" => "dropdown", href: "#"}
+                    Dropdown
+                    %b.caret
+                  %ul.dropdown-annimated{role: "menu"}
+                    %li.dropdown-item.dropdown-header Setting
+                    %li.dropdown-item
+                      %a.dropdown-btn{href: "#"} Action
+                    %li.dropdown-item
+                      %a.dropdown-btn{href: "#"} Another action
+                    %li.dropdown-item
+                      %a.dropdown-btn{href: "#"} Something else here
+                    %li.dropdown-item.divider
+                    %li.dropdown-item.active
+                      %a.dropdown-btn{href: "#"} Separated link
+                    %li.dropdown-item.divider
+                    %li.dropdown-item.disabled
+                      %a.dropdown-btn{href: "#"} One more separated link
+              %form.navbar-form.navbar-right{role: "search"}
+                .form-search.form-icon-wrapper
+                  = fa_icon "search", class: "form-icon"
+                  %input.form-control{type: "text"}/
+
+
+  / 
+    Pills
+    \==================================================            
+  .example
+    .row
+      .col-md-6
+        .headline.headline-success
+          %h2 Pills
+        .row
+          .col-md-12
+            %ul.nav.nav-pills.nav-justified
+              %li.active
+                %a{href: "#"}
+                  Home
+                  %span.badge 42
+              %li
+                %a{href: "#"}
+                  Profile
+                  %span.badge.badge-danger 42
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+                  Dropdown
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{href: "#"} @fat
+                  %li
+                    %a{href: "#"} @mdo
+          .col-md-12
+            %ul#myTab2.nav.nav-pills.nav-stacked
+              %li.active
+                %a{href: "#"}
+                  Home
+                  %span.badge.pull-right 42
+              %li
+                %a{href: "#"} Profile
+              %li.dropdown
+                %a{href: "#"}
+                  Messages
+                  %span.badge.badge-danger.pull-right 20
+     
+  / 
+    Pager
+    \==================================================         
+  .example
+    .row
+      .col-md-6
+        .headline.headline-warning
+          %h2 Paginations
+
+        %ul.pagination
+          %li.active
+            %a{href: "#"} PREV
+          %li
+            %a{href: "#"} 1
+          %li.active
+            %a{href: "#"} 2
+          %li
+            %a{href: "#"} 3
+          %li
+            %a{href: "#"} 4
+          %li.disabled
+            %a{href: "#"} 5
+          %li.active
+            %a{href: "#"} NEXT
+
+      .col-md-6      
+        .headline.headline-warning
+          %h2 Pagers
+
+        %ul.pager
+          %li.previous
+            %a{href: "#"} Previous
+          %li.next.disabled
+            %a{href: "#"} Next
+
+  /
+    Spinner
+    \==================================================
+  .example
+    .headline.headline-success
+      %h2
+        %a{ href: "https://github.com/tobiasahlin/SpinKit/", target: "_blank" } 
+          = fa_icon 'external-link'
+          Spinner
+
+    .row 
+      .col-md-2
+        .sk-spinner.sk-spinner-three-bounce
+          .sk-bounce1
+          .sk-bounce2
+          .sk-bounce3
+          
+
+      .col-md-2
+        .spinner-double-bounce
+          .double-bounce1
+          .double-bounce2
+
+      .col-md-2
+        .spinner-scaleout
+
+      .col-md-2
+        .spinner-bounce
+          .bounce1
+          .bounce2
+          .bounce3
+
+      .col-md-2
+        .spinner-circle
+          .spinner-container.container1
+            .circle1
+            .circle2
+            .circle3
+            .circle4
+
+          .spinner-container.container2
+            .circle1
+            .circle2
+            .circle3
+            .circle4
+
+          .spinner-container.container3
+            .circle1
+            .circle2
+            .circle3
+            .circle4
+
+  / 
+    Thumbnails
+    \==================================================
+  .example
+    .headline.headline-success
+      %h2
+        Thumbnail and Media list with ribbon
+    .row
+      .col-md-3
+        = link_to "#", class: "link-img zoomer thumbnail with-ribbon" do
+          .ribbon-wrapper
+            .ribbon.ribbon-warning
+              WARNING
+          
+          .overlay-zoom
+            .overlay-icon
+              = fa_icon "search"    
+            %img.img-responsive{ "data-src" => "holder.js/100%x200" }
+          .caption
+            %h3
+              Thumbnail title
+            %p
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.    
+      .col-md-3
+        .thumbnail.with-ribbon
+          .ribbon-wrapper
+            .ribbon.ribbon-success
+              SUCCESS
+          %img.img-responsive{ "data-src" => "holder.js/100%x200" }    
+          .caption
+            %h3
+              Thumbnail title
+            %p
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.    
+      
+      .col-md-6
+        .row
+          .col-md-12
+            %ul.media-list
+              %li.media.with-ribbon
+                .ribbon-wrapper
+                  .ribbon.ribbon-danger
+                    DANGER
+                .media-body
+                  %h4.media-heading
+                    Media heading
+                  %p
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.  
+              %li.media.with-ribbon
+                .ribbon-wrapper
+                  .ribbon.ribbon-info
+                    INFO
+                %img.pull-left.media-object{ "data-src" => "holder.js/64x64" }
+                .media-body
+                  %h4.media-heading
+                    Media heading
+                  %p
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.  
+
+                  .media.with-ribbon
+                    .ribbon-wrapper
+                      .ribbon.ribbon-primary
+                        PRIMARY
+                    %img.pull-left.media-object{ "data-src" => "holder.js/64x64" }
+                    .media-body
+                      %h4.media-heading
+                        Media heading
+                      %p
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.  
+
+  .example            
+    .row
+      .col-md-6
+        /
+          Popovers
+          \==================================================
+        .headline.headline-success
+          %h2 Popovers
+        .row.example-popover
+          .col-md-6
+            .popover.top
+              .arrow
+              %h3.popover-title Popover top
+              .popover-content
+                %p Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+          .col-md-6
+            .popover.right
+              .arrow
+              %h3.popover-title Popover right
+              .popover-content
+                %p Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+          .col-md-6
+            .popover.bottom
+              .arrow
+              %h3.popover-title Popover bottom
+              .popover-content
+                %p Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+          .col-md-6
+            .popover.left
+              .arrow
+              %h3.popover-title Popover left
+              .popover-content
+                %p Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      .col-md-3.col-md-offset-2
+        /
+          Tooltips
+          \==================================================
+        .headline.headline-success
+          %h2
+            %a{ href: "http://kushagragour.in/lab/hint/", target: "_blank" }
+              = fa_icon 'external-link'
+              Tooltips
+            
+        .row.tooltip-demo
+          .col-md-12
+            %button.btn.btn-info.btn-block.hint--left{ "data-hint" => "Tooltip on left", type: "button"} Tooltip on left
+          .col-md-12
+            %button.btn.btn-default.btn-block.hint--top{ "data-hint" => "Tooltip on top", type: "button"} Tooltip on top
+          .col-md-12
+            %button.btn.btn-primary.btn-inverse.btn-block.hint--right.hint--bounce{ "data-hint" => "Tooltip on bottom", type: "button"} Tooltip on bottom with bounce
+          .col-md-12
+            %button.btn.btn-danger.btn-block.hint--bottom{ "data-hint" => "Tooltip on right", type: "button"} Tooltip on right          
+  /
+    Forms
+    \==================================================
+  .example
+    .row
+      .col-md-12
+        .headline.headline-success
+          %h2 Forms
+        .row
+          .col-md-6
+            %input.form-control{placeholder: "Text input", type: "text"}/
+          .col-md-6
+            %input.form-control{disabled: "disabled", placeholder: "Text input", type: "text"}/
+        .row
+          .col-md-6
+            %textarea.form-control{rows: "3"}
+          .col-md-6
+            .row
+              .col-md-12
+                .input-group
+                  %span.input-group-addon $
+                  %input.form-control{type: "text"}/
+                  %span.input-group-addon .00
+              .col-md-12
+                .input-group
+                  .input-group-btn
+                    %button.btn.btn-danger{tabindex: "-1", type: "button"} Action
+                    %button.btn.btn-danger.dropdown-toggle{"data-toggle" => "dropdown", tabindex: "-1", type: "button"}
+                      %span.caret
+                    %ul.dropdown-menu
+                      %li
+                        %a{href: "#"} Action
+                      %li
+                        %a{href: "#"} Another action
+                      %li
+                        %a{href: "#"} Something else here
+                      %li.divider
+                      %li
+                        %a{href: "#"} Separated link
+                  %input.form-control{type: "text"}/
+                  .input-group-btn
+                    %button.btn.btn-primary{tabindex: "-1", type: "button"} Action
+                    %button.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", tabindex: "-1", type: "button"}
+                      %span.caret
+                    %ul.dropdown-menu
+                      %li
+                        %a{href: "#"} Action
+                      %li
+                        %a{href: "#"} Another action
+                      %li
+                        %a{href: "#"} Something else here
+                      %li.divider
+                      %li
+                        %a{href: "#"} Separated link
+        .row
+          .col-md-6
+            .form-icon-wrapper
+              = fa_icon 'search', class: "form-icon"
+              %input.form-control{type: "text"}/
+          .col-md-6
+            .input-group.form-search
+              %input.form-control.search-query{type: "text"}/
+              %span.input-group-btn
+                %button.btn.btn-primary{"data-type" => "last", type: "submit"} Search
+        .row
+          .col-md-4
+            .form-group.has-success.has-feedback
+              %label.control-label{for: "inputSuccess2"} Input with success
+              %input#inputSuccess2.form-control{type: "text"}/
+              %span.form-control-feedback
+                = fa_icon 'check'
+          .col-md-4
+            .form-group.has-warning.has-feedback
+              %label.control-label{for: "inputWarning2"} Input with warning
+              %input#inputWarning2.form-control{type: "text"}/
+              %span.form-control-feedback
+                = fa_icon 'warning'
+          .col-md-4
+            .form-group.has-error.has-feedback
+              %label.control-label{for: "inputError2"} Input with error
+              %input#inputError2.form-control{type: "text"}/
+              %span.form-control-feedback
+                = fa_icon 'times'
+  
+  /
+    Alerts
+    \==================================================
+  .example
+    .headline.headline-info
+      %h2 Alerts
+    .row
+      .col-md-6
+        .alert.alert-warning.alert-dismissable
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %strong Warning!
+          Best check yo self, you're not looking too good.
+        .alert.alert-info.alert-dismissable
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %strong Well done!
+          You successfully read this important alert message.
+      .col-md-6
+        .alert.alert-success.alert-dismissable
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %strong Heads up!
+          This alert needs your attention, but it's not super important.
+        .alert.alert-danger
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %strong Oh snap!
+          Change a few things up and try submitting again.
+    .row
+      .col-md-6
+        .alert.alert-warning.alert-dismissable
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %h4 Warning!
+          %p
+            Change this and that and try again.
+            = succeed "," do
+              %a.alert-link Duis mollis
+          %p
+            %a.btn.btn-warning{href: "#"} Take this action
+            %a.btn.btn-link{href: "#"} Or do this
+        .alert.alert-info
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %h4 Well done!
+          %p
+            Change this and that and try again.
+            = succeed "," do
+              %a.alert-link Duis mollis
+          %p
+            %a.btn.btn-primary{href: "#"} Take this action
+            %a.btn.btn-link{href: "#"} Or do this
+      .col-md-6
+        .alert.alert-success.alert-dismissable
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %h4 Heads up!
+          %p
+            Change this and that and try again.
+            = succeed "," do
+              %a.alert-link Duis mollis
+          %p
+            %a.btn.btn-success{href: "#"} Take this action
+            %a.btn.btn-link{href: "#"} Or do this
+        .alert.alert-danger.alert-dismissable
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          %h4 Oh snap!
+          %p
+            Change this and that and try again.
+            = succeed "," do
+              %a.alert-link Duis mollis
+          %p
+            %a.btn.btn-danger{href: "#"} Take this action
+            %a.btn.btn-link{href: "#"} Or do this
+    
+
+  /
+    Progresses
+    \==================================================
+  .example
+    .headline.headline-info
+      %h2 Progresses  
+    .row
+      .col-md-6
+        .row.example-progress
+          .col-md-12
+            .progress
+              .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", role: "progressbar", style: "width: 60%;"} 60%
+          .col-md-12
+            .progress
+              .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "40", role: "progressbar", style: "width: 40%"}
+                %span.sr-only 40% Complete (success)
+          .col-md-12
+            .progress
+              .progress-bar.progress-bar-info{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "20", role: "progressbar", style: "width: 20%"}
+                %span.sr-only 20% Complete
+      .col-md-6
+        .row    
+          .col-md-12
+            .progress.progress-striped.active
+              .progress-bar.progress-bar-info{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "20", role: "progressbar", style: "width: 20%"}
+                %span.sr-only 20% Complete
+          .col-md-12
+            .progress.progress-striped.active
+              .progress-bar.progress-bar-warning{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", role: "progressbar", style: "width: 60%"}
+                %span.sr-only 60% Complete (warning)
+          .col-md-12
+            .progress.progress-striped.active
+              .progress-bar.progress-bar-danger{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "80", role: "progressbar", style: "width: 80%"}
+                %span.sr-only 80% Complete (danger)
+
+        
+  
+  /
+    Lists
+    \==================================================
+  .example
+    .headline.headline-info
+      %h2 Lists
+    .row
+      .col-md-6
+        %ul.list-group
+          %li.list-group-item
+            %span.badge> 14
+            Cras justo odio
+          %li.list-group-item
+            %span.badge.badge-default> 91
+            Dapibus ac facilisis in
+          %li.list-group-item
+            %span.badge.badge-primary> 38
+            Morbi leo risus
+          %li.list-group-item
+            %span.badge.badge-success> 56
+            Porta ac consectetur ac
+          %li.list-group-item
+            %span.badge.badge-warning> 20
+            Vestibulum at eros
+          %li.list-group-item
+            %span.badge.badge-danger> 99+
+            Dapibus ac facilisis in
+      .col-md-6
+        .list-group
+          %a.list-group-item.list-group-item-primary{href: "#"} facilisis in
+          %a.list-group-item.list-group-item-success{href: "#"} Dapibus ac facilisis in
+          %a.list-group-item.list-group-item-info{href: "#"} Cras sit amet nibh libero
+          %a.list-group-item.list-group-item-warning{href: "#"} Porta ac consectetur ac
+          %a.list-group-item.list-group-item-danger{href: "#"} Vestibulum at eros
+    .row
+      .col-md-6
+        .list-group
+          %a.list-group-item.active{href: "#"} Cras justo odio
+          %a.list-group-item{href: "#"} Dapibus ac facilisis in
+          %a.list-group-item{href: "#"} Morbi leo risus
+          %a.list-group-item{href: "#"} Porta ac consectetur ac
+          %a.list-group-item{href: "#"} Vestibulum at eros
+          %a.list-group-item{href: "#"}
+            %span.badge.badge-primary> 38
+            Morbi leo risus
+      .col-md-6
+        .list-group
+          %a.list-group-item.active{href: "#"}
+            %h4.list-group-item-heading List group item heading
+            %p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+          %a.list-group-item{href: "#"}
+            %h4.list-group-item-heading List group item heading
+            %p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+          %a.list-group-item{href: "#"}
+            %h4.list-group-item-heading List group item heading
+            %p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+  
+ 
+  /
+    Panels
+    \==================================================
+  .example
+    .headline.headline-success
+      %h2 Panels
+    .row
+      .col-md-6
+        .panel.panel-default
+          .panel-heading
+            %h3.panel-title Panel title
+          .panel-body
+            Panel content
+          .panel-footer
+            %button.btn.btn-default{ type: "button" }  
+              Button
+        .panel.panel-primary
+          .panel-heading
+            %h3.panel-title Panel title
+          .panel-body
+            Panel content
+          .panel-footer
+            %button.btn.btn-default{ type: "button" }  
+              Button  
+        .panel.panel-success
+          .panel-heading
+            %h3.panel-title Panel title
+          .panel-body
+            Panel content
+          .panel-footer
+            %button.btn.btn-default{ type: "button" }  
+              Button  
+        .panel.panel-warning
+          .panel-heading
+            %h3.panel-title Panel title
+          .panel-body
+            Panel content
+        .panel.panel-info
+          .panel-heading
+            %h3.panel-title Panel title
+          .panel-body
+            Panel content
+        .panel.panel-danger
+          .panel-heading
+            %h3.panel-title Panel title
+          .panel-body
+            Panel content
+      .col-md-6
+        .panel.panel-default
+          .panel-heading Panel heading
+          %table.table
+            %thead
+              %tr
+                %th #
+                %th First Name
+                %th Last Name
+                %th Username
+            %tbody
+              %tr
+                %td 1
+                %td Mark
+                %td Otto
+                %td @mdo
+              %tr
+                %td 2
+                %td Jacob
+                %td Thornton
+                %td @fat
+              %tr
+                %td 3
+                %td Larry
+                %td the Bird
+                %td @twitter
+        .panel.panel-default
+          .panel-heading Panel heading
+          .panel-body
+            %p Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+          %ul.list-group
+            %li.list-group-item Cras justo odio
+            %li.list-group-item Dapibus ac facilisis in
+            %li.list-group-item Morbi leo risus
+            %li.list-group-item Porta ac consectetur ac
+            %li.list-group-item Vestibulum at eros
+  
+  /
+    Footer
+    \==================================================
+  .example
+    .headline.headline-success
+      %h2 Footers
+    .row
+      .col-md-12
+        .footer
+          .container
+            .clearfix
+              .footer-logo
+                %a{href: "#"}
+                  Brand
+              %dl.footer-nav
+                %dt.nav-title PORTFOLIO
+                %dd.nav-item
+                  %a{href: "#"} Web Design
+                %dd.nav-item
+                  %a{href: "#"} Branding & Identity
+                %dd.nav-item
+                  %a{href: "#"} Mobile Design
+                %dd.nav-item
+                  %a{href: "#"} Print
+                %dd.nav-item
+                  %a{href: "#"} User Interface
+              %dl.footer-nav
+                %dt.nav-title ABOUT
+                %dd.nav-item
+                  %a{href: "#"} The Company
+                %dd.nav-item
+                  %a{href: "#"} History
+                %dd.nav-item
+                  %a{href: "#"} Vision
+              %dl.footer-nav
+                %dt.nav-title GALLERY
+                %dd.nav-item
+                  %a{href: "#"} Flickr
+                %dd.nav-item
+                  %a{href: "#"} Picasa
+                %dd.nav-item
+                  %a{href: "#"} iStockPhoto
+                %dd.nav-item
+                  %a{href: "#"} PhotoDune
+              %dl.footer-nav
+                %dt.nav-title CONTACT
+                %dd.nav-item
+                  %a{href: "#"} Basic Info
+                %dd.nav-item
+                  %a{href: "#"} Map
+                %dd.nav-item
+                  %a{href: "#"} Conctact Form
+            .footer-copyright.text-center Copyright © 2014 Flathemes.All rights reserved.
+  

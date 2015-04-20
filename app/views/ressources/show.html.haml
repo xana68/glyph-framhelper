@@ -1,0 +1,22 @@
+.container
+  .row
+  - @category.each do |cat|
+    .col-xs-4.list-group
+      .list-group-item
+        %h2.list-group-item-heading
+          = cat.name
+
+      - cat.ressources.each do |ressource|
+        = link_to ressource.url, class: 'list-group-item', target: '_blank' do    
+          %h3.list-group-item-heading
+            = ressource.title
+            - ressource.tags.each do |tag|
+              %span.label.label-primary.label-inverse.label-xs
+                = tag.name
+
+          %p.list-group-item-text
+            = ressource.caption
+              
+      
+        
+      

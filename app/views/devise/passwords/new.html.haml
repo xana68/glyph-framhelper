@@ -1,0 +1,8 @@
+#form-signin.vCenter.hCenter
+  = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: "form-signin glyph-form" }) do |f|
+    %h2.form-signin-heading 
+      = t('devise.forget_password')
+    %hr
+    = f.input :email, required: true, autofocus: true, label: false, placeholder: t('devise.email'), hint: t('devise.reset_infos'), wrapper: :input_group_append, icon: "fa fa-envelope"
+    
+    = f.button :submit, t('devise.reset_btn'), class: 'btn btn-lg btn-primary btn-block'

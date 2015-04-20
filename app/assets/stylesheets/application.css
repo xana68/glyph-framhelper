@@ -1,0 +1,10 @@
+/*
+ *= require font-awesome
+ *= require selectize
+ *= require selectize.bootstrap3
+ *= require simple_form_extension
+ *= require config/config
+ *= require config/sprites
+ *= require global
+ *= require_tree ./src
+ */

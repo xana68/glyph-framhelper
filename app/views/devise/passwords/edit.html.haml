@@ -1,0 +1,12 @@
+#form-signin.vCenter.hCenter
+  = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: "form-signin glyph-form" }) do |f| 
+    %h2.form-signin-heading 
+      = t('devise.change_password')
+    %hr
+    = f.input :reset_password_token, as: :hidden 
+    = f.full_error :reset_password_token 
+
+    = f.input :password, label: false, required: true, autofocus: true, placeholder: t('devise.new_password'), wrapper: :input_group_append, icon: "fa fa-key"
+    = f.input :password_confirmation, label: false, required: true, placeholder: t('devise.new_password_confirm'), wrapper: :input_group_append, icon: "fa fa-key" 
+
+    = f.button :submit, t('devise.change_btn'), class: 'btn btn-lg btn-primary btn-block'

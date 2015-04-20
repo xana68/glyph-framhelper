@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  host: localhost
+  username: postgres
+  password:
+
+development:
+  <<: *default
+  database: glyph_application_helper_dev
+
+test:
+  <<: *default
+  database: glyph_application_helper_test
+
+staging:
+  <<: *default
+  database: glyph_application_helper_staging
+  username:
+  password:
+
+production:
+  <<: *default
+  database: glyph_application_helper_production
+  username:
+  password:

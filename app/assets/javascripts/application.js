@@ -1,0 +1,15 @@
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require nprogress
+//= require nprogress-turbolinks
+//= require selectize
+//= require bootstrap
+//= require simple_form_extension
+//= require cookieconsent
+//= require share_buttons
+//= require outdatedBrowser
+//= require jasny-bootstrap
+//= require bootstrap-hover-dropdown
+//= require magic-line
+//= require_tree ./src

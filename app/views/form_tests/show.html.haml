@@ -1,0 +1,61 @@
+.container
+  .example
+    %h1.example-title 
+      = link_to "Simple form", "http://simple-form-bootstrap.plataformatec.com.br/documentation", target: "_blank"
+      &&
+      = link_to "Simple form extension", "https://github.com/xana68/simple_form_extension", target: "_blank"
+      
+    .row
+      .col-md-6
+        = simple_form_for @form_test, wrapper: :horizontal_form, html: { class: 'form-horizontal panel panel-primary' } do |f|
+          %h2.panel-heading
+            Form Horizontal
+          .panel-body    
+            %pre.text-primary
+              wrapper: :horizontal_form, html: { class: 'form-horizontal' }
+            = f.input :string
+            = f.input :textarea, as: :redactor, hint: "<pre class='text-primary'>as: :redactor</pre>".html_safe
+            = f.input :number
+            = f.input :slider, as: :slider, hint: "<pre class='text-primary'>as: :slider</pre>".html_safe
+            = f.input :checkbox, wrapper: :horizontal_radio_and_checkboxes, hint: "<pre class='text-primary'>wrapper: :horizontal_radio_and_checkboxes</pre>".html_safe
+            = f.input :radio, as: :radio_buttons, wrapper: :horizontal_radio_and_checkboxes, hint: "<pre class='text-primary'>as: :radio_buttons, wrapper: :horizontal_radio_and_checkboxes</pre>".html_safe
+            = f.input :time, wrapper: :horizontal_form, hint: "<pre class='text-primary'>wrapper: :horizontal_form</pre>".html_safe
+            = f.input :date, wrapper: :horizontal_form, hint: "<pre class='text-primary'>wrapper: :horizontal_form</pre>".html_safe
+            = f.input :datetime, wrapper: :horizontal_form, hint: "<pre class='text-primary'>wrapper: :horizontal_form</pre>".html_safe
+
+      .col-md-6
+        = simple_form_for @form_test, wrapper: :vertical_form, html: { class: 'form-vertical panel panel-primary' } do |f|
+          %h2.panel-heading
+            Form Vertical
+          .panel-body
+            %pre.text-primary
+              wrapper: :vertical_form, html: { class: 'form-vertical' }
+            = f.input :string
+            = f.input :textarea, as: :redactor, hint: "<pre class='text-primary'>as: :redactor</pre>".html_safe
+            = f.input :number
+            = f.input :slider, as: :slider, hint: "<pre class='text-primary'>as: :slider</pre>".html_safe
+            = f.input :checkbox, wrapper: :vertical_radio_and_checkboxes, hint: "<pre class='text-primary'>wrapper: :vertical_radio_and_checkboxes</pre>".html_safe
+            = f.input :radio, as: :radio_buttons, wrapper: :vertical_radio_and_checkboxes, hint: "<pre class='text-primary'>as: :radio_buttons, wrapper: :vertical_radio_and_checkboxes</pre>".html_safe
+            = f.input :time, wrapper: :vertical_form, hint: "<pre class='text-primary'>wrapper: :vertical_form</pre>".html_safe
+            = f.input :date, wrapper: :vertical_form, hint: "<pre class='text-primary'>wrapper: :vertical_form</pre>".html_safe
+            = f.input :datetime, wrapper: :vertical_form, hint: "<pre class='text-primary'>wrapper: :vertical_form</pre>".html_safe
+
+    .row
+      .col-md-12
+        = simple_form_for @form_test, wrapper: :inline_form, html: { class: 'form-inline panel panel-primary' } do |f|
+          %h2.panel-heading
+            Form Vertical 
+            %span.text-danger
+              BUGED VERSION WIP
+          .panel-body
+            %pre.text-primary
+              wrapper: :inline_form, html: { class: 'form-inline' }
+            = f.input :string, placeholder: "String"
+            = f.input :textarea, placeholder: "Textarea"
+            = f.input :number
+            = f.input :slider, as: :slider, hint: "<pre class='text-primary'>as: :slider</pre>".html_safe
+            = f.input :checkbox
+            = f.input :radio, as: :radio_buttons, label: false, hint: "<pre class='text-primary'>as: :radio_buttons, label: false</pre>".html_safe
+            = f.input :time, wrapper: :inline_form, placeholder: "Time", hint: "<pre class='text-primary'>wrapper: :inline_form</pre>".html_safe
+            = f.input :date, wrapper: :inline_form, placeholder: "Date", hint: "<pre class='text-primary'>wrapper: :inline_form</pre>".html_safe
+            = f.input :datetime, wrapper: :inline_form, placeholder: "Datetime", hint: "<pre class='text-primary'>wrapper: :inline_form</pre>".html_safe

@@ -1,0 +1,47 @@
+fr:
+  # Navigation
+  nav:
+    toggle_navigation: "Menu"
+    home: "Accueil"
+
+  # outdatedbrowser
+  outdatedbrowser:
+    please_note: "Mettez à jour votre navigateur pour afficher correctement ce site Web."
+    we_recommend_download: "Nous vous recommandons de mettre à jour votre navigateur ou de télécharger un des navigateurs suivant :"
+    download: "Télécharger"
+
+  # Devise
+  devise:
+    sign_in: "Connectez vous"
+    sign_in_btn: "Entrer"
+    email: "Entrer votre email"
+    password: "Mot de passe"
+    remember: "Rester connecté ?"
+    forget_password: "Mot de passe oublié ?"
+    no_worries: "Pas d'inquiétude,"
+    click_here: "cliquez ici"
+    reset_password: "pour renvoyer un mot de passe."
+    reset_btn: "Renvoyer"
+    reset_infos: "Merci de bien vouloir renseigner le champ ci-dessus, un email de réinitialisation de mot de passe vous sera envoyé"
+    change_password: "Changer votre mot de passe"
+    change_btn: "Changer"
+    new_password: "Nouveau mot de passe"
+    new_password_confirm: "Confirmer votre mot de passe"
+    failure:
+      user:
+        not_found_in_database: "Utilisateur non trouvé"
+
+  # Custom error messages inflections
+  the_item: Le
+  the_short_item: L'
+  messages:
+    errors: ''
+
+  # Kaminari translations
+  views:
+    pagination:
+      first: ! '&laquo; Première'
+      last: Dernière &raquo;
+      previous: ! '&lsaquo; Précédente'
+      next: Suivante &rsaquo;
+      truncate: ! '...'

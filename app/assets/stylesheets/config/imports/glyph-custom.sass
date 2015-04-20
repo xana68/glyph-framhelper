@@ -1,0 +1,527 @@
+//***************************************************************
+//    Imports
+//***************************************************************
+// --- Importing Bootstrap variables for colors and orther --- //
+@import "bootstrap-variables"
+
+// ------------------------ Compass  ------------------------- //
+@import "compass/css3/text-shadow"
+@import "compass/css3/box-shadow"
+@import "compass/css3/border-radius"
+@import "compass/css3/opacity"
+@import "compass/css3/border-radius"
+@import "compass/css3/transition"
+@import "compass/css3/inline-block"
+@import "compass/css3/transform"
+
+//***************************************************************
+//    Glyph Custom
+//***************************************************************
+
+// ------------------------ Shared  ------------------------- //
+
+// Center //
+
+@mixin display_flex
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+.vCenter
+  +display_flex
+  -webkit-box-align: center
+  -moz-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+
+.hCenter
+  +display_flex
+  -webkit-box-pack: center
+  -moz-box-pack: center
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+
+// Links //
+
+.p-relative
+  position: relative
+
+@mixin ir
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+
+a
+  &.inline-link
+    // Increasing the Clickable Area of Inline Links
+    // Source http://joshnh.com/2012/09/06/increasing-the-clickable-area-of-inline-links/
+    position: relative
+    padding: .5em
+    margin: -.5em
+  &:focus
+    outline: 0 !important
+
+  &:hover
+    text-decoration: none
+
+  &.block
+    display: block
+
+  &.ir
+    +ir
+
+  &.link-img
+    position: relative
+    +inline-block
+    +ir
+    
+  &.link-block
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    text-decoration: none
+    z-index: 1
+    background-color: transparent 
+    +opacity(0)
+
+html.no-touch
+  a.link-img
+    &.with-icon
+      text-indent: initial
+      &:hover
+        .icon-link
+          +opacity(1)
+        img
+          +opacity(.8)  
+      .icon-link
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 26px
+        height: 26px
+        margin: -13px 0 0 -13px
+        z-index: 2
+        +single-transition(opacity, .2s, ease)
+        +opacity(0)
+        .fa-stack-2x
+          color: black
+      img
+        position: relative
+        z-index: 1
+        +single-transition(opacity, .2s, ease)
+    &.zoomer
+      text-indent: initial
+      .overlay-zoom
+        position: relative
+        width: 100%
+        height: 100%
+        z-index: 1
+        cursor: pointer
+        +single-transition(all, .1s, ease-in-out)
+        .overlay-icon
+          position: absolute
+          top: 0
+          width: inherit
+          height: inherit
+          background-color: black
+          z-index: 2
+          -webkit-backface-visibility: hidden
+          +opacity(0)
+          +single-transition(all, .4s, ease-in-out)
+          +scale(0)
+          i
+            position: absolute
+            width: 20px
+            height: 20px
+            top: 50%
+            left: 50%
+            margin: -10px 0 0 -10px
+            color: white
+      &:hover
+        .overlay-zoom .overlay-icon
+          +opacity(.4)
+          +scale(1)
+
+  .sliding-middle-out
+    display: inline-block
+    position: relative
+    padding-bottom: 1px
+
+  .sliding-middle-out:after
+    content: ''
+    display: block
+    margin: auto
+    height: 1px
+    width: 0px
+    background: transparent
+    +transition(width .5s ease, background-color .5s ease)
+
+  .sliding-middle-out:hover:after
+    width: 100%
+    background: $link-hover-color
+
+
+// Commonds //
+
+.font-light
+  font-weight: 300 !important
+
+.font-normal
+  font-weight: 400 !important
+
+.font-medium
+  font-weight: 500 !important
+
+.font-bold
+  font-weight: 700 !important
+
+.font-extra-bold
+  font-weight: 800 !important  
+
+.text-justify
+  text-align: justify !important
+
+.text-uppercase
+  text-transform: uppercase !important
+
+.text-none
+  text-transform: none !important
+
+.text-underline
+  text-decoration: underline !important
+
+// margin //
+.margin-auto
+  margin-left: auto
+  margin-right: auto
+
+.margin-top-xs
+  margin-top: 5px
+
+.margin-top-sm
+  margin-top: 10px
+
+.margin-top-md
+  margin-top: 20px
+
+.margin-top-lg
+  margin-top: 30px  
+
+.margin-bottom-xs
+  margin-bottom: 5px
+
+.margin-bottom-sm
+  margin-bottom: 10px
+
+.margin-bottom-md
+  margin-bottom: 20px
+
+.margin-bottom-lg
+  margin-bottom: 30px
+
+// Clear & Hidden //
+
+.clear-button
+  background: none
+  border: none
+  +box-shadow(none)
+  +text-shadow(none)
+  +border-radius(0px)
+  &:hover
+    background: none
+
+// ------------------------ Commonds  ------------------------- //
+.headline
+  display: block
+  margin: 10px 0 25px 0
+  border-bottom: 1px dotted $gray-light
+  h1, h2, h3
+    margin: 0 0 -2px 0
+    padding-bottom: 5px
+    +inline-block
+    border-bottom: 2px solid $gray-lighter
+  &.headline-primary
+    h1, h2, h3
+      border-color: $brand-primary
+  &.headline-success
+    h1, h2, h3
+      border-color: $brand-success
+  &.headline-info
+    h1, h2, h3
+      border-color: $brand-info
+  &.headline-danger
+    h1, h2, h3
+      border-color: $brand-danger
+  &.headline-warning
+    h1, h2, h3
+      border-color: $brand-warning
+
+// ------------------------ Ribbon  ---------------------- //
+
+.with-ribbon
+  position: relative
+  overflow: visible
+
+.ribbon-wrapper
+  width: 85px
+  height: 88px
+  overflow: hidden
+  position: absolute
+  top: -3px
+  right: -3px
+
+.ribbon
+  position: relative
+  padding: 7px 0
+  left: -5px
+  top: 15px
+  width: 120px
+  font-weight: bold
+  font-size: 12px
+  color: $gray
+  text-align: center
+  z-index: 100
+  +rotate(45deg)
+  &:before 
+    left: 0
+  &:after 
+    right: 0
+  &:before,
+  &:after 
+    position: absolute
+    bottom: -2px
+    content: ""
+    border-left:  3px solid transparent
+    border-right: 3px solid transparent
+    
+.ribbon-success  
+  background-color: $brand-success
+  color: darken($brand-success, 30%)
+  &:before,
+  &:after
+    border-top: 3px solid darken($brand-success, 15%)
+
+.ribbon-primary
+  background-color: $brand-primary
+  color: darken($brand-primary, 30%)
+  &:before,
+  &:after
+    border-top: 3px solid darken($brand-primary, 15%)
+
+.ribbon-info  
+  background-color: $brand-info
+  color: darken($brand-info, 30%)
+  &:before,
+  &:after
+    border-top: 3px solid darken($brand-info, 15%)
+
+.ribbon-danger
+  background-color: $brand-danger
+  color: darken($brand-danger, 30%)
+  &:before,
+  &:after
+    border-top: 3px solid darken($brand-danger, 15%)  
+
+.ribbon-warning
+  background-color: $brand-warning
+  color: darken($brand-warning, 30%)
+  &:before,
+  &:after
+    border-top: 3px solid darken($brand-warning, 15%)    
+
+// --------------------- Animation navbar toggle ---------------------- //
+
+.navbar-toggle.animated
+  padding: 15px 40px 20px 5px
+  &:hover,
+  &:focus
+    background-color: transparent
+    span:before,
+    span:after 
+      background-color: darken($navbar-default-toggle-icon-bar-bg, 5%)
+  span,
+  span:before,
+  span:after 
+    cursor: pointer
+    border-radius: 1px
+    -moz-border-radius: 1px
+    -webkit-border-radius: 1px
+    -o-border-radius: 1px
+    height: 5px
+    width: 35px
+    background-color: $navbar-default-toggle-icon-bar-bg
+    position: absolute
+    display: block
+    content: ''
+    +transition(all 500ms ease-in-out, background-color .1s ease-in-out)
+  span 
+    background-color: transparent
+  span:before,
+  span:after 
+    top: 0
+  span:before 
+    +rotate(45deg)
+  span:after 
+    +transform(translateY(-10px) rotate(-45deg))
+    top: 10px
+
+  &.collapsed
+    &:hover,
+    &:focus
+      background-color: transparent
+      span,
+      span:before,
+      span:after 
+        background-color: darken($navbar-default-toggle-icon-bar-bg, 5%)
+    span 
+      background-color: $navbar-default-toggle-icon-bar-bg
+    span:before 
+      top: -10px
+      +rotate(0deg)
+    span:after 
+      bottom: -10px
+      +transform(translateY(0px) rotate(0deg))
+ 
+// ------------------------ Socials Icons  ------------------------- //
+
+[class^="socials-"], [class*=" socials-"]
+  +single-transition(background-position-y, 0.3s, ease-in-out)
+  width: 33px
+  height: 33px
+  &:hover
+    background-position-y: -45px
+
+.sprites-opacity-transition
+  position: relative
+  [class^="sprites-"], [class*=" sprites-"]
+    position: absolute
+  [class^="sprites-active"], [class*=" sprites-active"]
+    z-index: 1
+    +single-transition(opacity, 0.3s, ease)
+    +opacity(1)
+    &:hover
+      +opacity(0)
+  [class^="sprites-hover"], [class*=" sprites-hover"]
+    z-index: 0
+
+// ------------------------ Dropdown  ------------------------- //
+
+.dropdown
+  &:hover
+    .dropdown-annimated
+      +opacity(1)
+      .dropdown-item
+        height: 30px
+        overflow: visible
+        padding: 0
+
+  .dropdown-btn
+    display: block
+    white-space: nowrap
+    color: $dropdown-link-color
+    padding: 3px 20px
+    +single-transition(all, 0.3s, ease)
+    &:hover
+      color: $dropdown-link-hover-color
+      background-color: $dropdown-link-hover-bg
+
+  .dropdown-annimated
+    position: absolute
+    top: auto
+    left: 0
+    min-width: 160px
+    margin: 2px 0 0 0
+    padding: 5px 0 
+    list-style: none
+    z-index: $zindex-dropdown
+    border: 1px solid $dropdown-border
+    +border-radius($border-radius-base)
+    +box-shadow(0 6px 12px rgba(0,0,0,.175))
+    +opacity(0)
+    +single-transition(opacity, 0.25s, ease, 0.1s)
+    background-color: $dropdown-bg
+    .dropdown-item
+      height: 0
+      overflow: hidden
+      padding: 0
+      +single-transition(height, 0.25s, ease, 0.1s)
+      &.disabled 
+        a,
+        a:hover,
+        a:focus
+          color: $dropdown-link-disabled-color
+        a:hover,
+        a:focus
+          background-color: transparent  
+          cursor: not-allowed
+      &.divider
+        height: 1px
+        overflow: hidden
+        background-color: $dropdown-divider-bg    
+      &.dropdown-header
+        padding: 3px 20px
+
+// ------------------------ Footer  ---------------------- //
+// Variables
+//------------------------------------------------------
+$footer-background-color:            $gray-darker !default
+$footer-menu-title-color:            $gray-lighter !default
+$footer-menu-item-color:             $gray-light !default
+$footer-menu-item-color-hover:       $gray !default
+$footer-logo-color:                  #fff !default
+
+.footer 
+  padding: 40px 0
+  background-color: $footer-background-color
+
+  .footer-logo,
+  .footer-nav 
+    float: left
+    padding: 0 20px
+    width: 20%
+  
+  @media (max-width: 768px) 
+    .footer-logo 
+      margin-bottom: 20px
+    
+    .footer-logo,
+    .footer-nav 
+      float: none
+      display: block
+      width: 100%
+          
+  .footer-logo 
+    margin-top: -5px
+    height: 32px
+    line-height: 32px
+    img 
+      margin-right: 10px
+    a 
+      font-size: 20px
+      font-weight: bold
+      color: $footer-logo-color
+      &:hover,
+      &:active 
+        text-decoration: none
+  .footer-nav .nav-title 
+    margin-bottom: 15px
+    color: $footer-menu-title-color
+  .footer-nav .nav-item 
+    line-height: 28px
+    a 
+      color: $footer-menu-item-color
+      &:hover,
+      &:active 
+        color: $footer-menu-item-color-hover
+        text-decoration: none
+  .footer-copyright 
+    color: $footer-menu-item-color
+             

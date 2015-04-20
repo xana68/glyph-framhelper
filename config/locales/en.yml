@@ -1,0 +1,47 @@
+en:
+  # Navigation
+  nav:
+    toggle_navigation: "Menu"
+    home: "Home"
+
+  # outdatedbrowser
+  outdatedbrowser:
+    please_note: "Thank you to note that we no longer support this versions of Internet Explorer"
+    we_recommend_download: "We recommend that you upgrade yor brower or download one of the folling browers:"
+    download: "Download"
+
+  # Devise
+  devise:
+    sign_in: "Sign in"
+    sign_in_btn: "Send"
+    email: "Email"
+    password: "Password"
+    remember: "Rester connecté ?"
+    forget_password: "Forgot your password ?"
+    no_worries: "No worries,"
+    click_here: "click here"
+    reset_password: "for send back a new password."
+    reset_btn: "Send back"
+    reset_infos: "Thank for fill in the above field, a reset password email will be sent"
+    change_password: "Change my password"
+    change_btn: "Change"
+    new_password: "New password"
+    new_password_confirm: "Confirm my password"
+    failure:
+      user:
+        not_found_in_database: "User not found"
+
+  # Custom error messages inflections
+  the_item: The
+  the_short_item: A
+  messages:
+    errors: ''
+
+  # Kaminari translations
+  views:
+    pagination:
+      first: ! '&laquo; First'
+      last: Last &raquo;
+      previous: ! '&lsaquo; Previous'
+      next: Next &rsaquo;
+      truncate: ! '...'
