@@ -63,6 +63,7 @@ gem "whenever"
 group :production, :staging do
   gem "exception_notification", github: "glyph-fr/exception_notification"
   gem "slack-notifier"
+  gem 'lograge'
 end
 
 group :development do

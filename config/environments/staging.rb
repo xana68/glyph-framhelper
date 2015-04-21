@@ -4,7 +4,7 @@ Rails.application.configure do
 
   config.lograge.enabled = true
 
-    config.action_mailer.delivery_method = :sendmail
+  config.action_mailer.delivery_method = :sendmail
   config.action_mailer.default_url_options = { host: "glyph_application_helper.glyph.fr" }
   
   # Exception notifier

@@ -232,6 +232,10 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.9.3)
+    lograge (0.3.1)
+      actionpack (>= 3)
+      activesupport (>= 3)
+      railties (>= 3)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -403,6 +407,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
+  lograge
   meta_tags!
   modernizr-rails
   nprogress-rails
