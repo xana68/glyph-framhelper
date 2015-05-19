@@ -1,0 +1,14 @@
+= resources_table(model: model, component: component) do |table|
+  = table.header do
+    = table.header_for(:title)
+    = table.header_for(:caption)
+    = table.header_for(:url)
+    = table.header_for(:tags)
+    = table.header_for(:category)
+
+  = table.rows(resources) do |resource|
+    = table.data_for(resource, :title)
+    = table.data_for(resource, :caption)
+    = table.data_for(resource, :url)
+    = table.data_for(resource, :tags)
+    = table.data_for(resource, :category)
