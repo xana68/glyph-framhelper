@@ -20,11 +20,11 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 // Brand colors
 // -------------------------
 
-$brand-primary:         #24496B !default;
-$brand-success:         #2F8E3D !default;
-$brand-warning:         #BFBF10 !default;
-$brand-danger:          #B43C3E !default;
-$brand-info:            #3C8EB4 !default;
+$brand-primary:         #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+$brand-info:            #5bc0de !default;
 
 // Scaffolding
 // -------------------------
@@ -128,23 +128,23 @@ $btn-default-border:             #ddd !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 10%) !default;
+$btn-primary-border:             $btn-primary-bg !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 10%) !default;
+$btn-success-border:             $btn-success-bg !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 10%) !default;
+$btn-warning-border:             $btn-warning-bg !default;
 
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 10%) !default;
+$btn-danger-border:              $btn-danger-bg !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 10%) !default;
+$btn-info-border:                $btn-info-bg !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -393,20 +393,20 @@ $jumbotron-font-size:            ceil($font-size-base * 1.5) !default;
 // -------------------------
 
 $state-success-text:             $brand-success !default;
-$state-success-bg:               $brand-success !default;
-$state-success-border:           darken($brand-success, 15%) !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken($state-success-bg, 10%) !default;
 
 $state-info-text:                $brand-info !default;
-$state-info-bg:                  $brand-info !default;
-$state-info-border:              darken($brand-info, 15%) !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken($state-info-bg, 10%) !default;
 
 $state-warning-text:             $brand-warning !default;
-$state-warning-bg:               $brand-warning !default;
-$state-warning-border:           darken($brand-warning, 15%) !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken($state-warning-bg, 10%) !default;
 
 $state-danger-text:              $brand-danger !default;
-$state-danger-bg:                $brand-danger !default;
-$state-danger-border:            darken($brand-danger, 15%) !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken($state-danger-bg, 10%) !default;
 
 
 // Tooltips
@@ -473,19 +473,19 @@ $alert-border-radius:         $border-radius-base !default;
 $alert-link-font-weight:      bold !default;
 
 $alert-success-bg:            $state-success-bg !default;
-$alert-success-text:          #fff !default;
+$alert-success-text:          $state-success-text !default;
 $alert-success-border:        $state-success-border !default;
 
 $alert-info-bg:               $state-info-bg !default;
-$alert-info-text:             #fff !default;
+$alert-info-text:             $state-info-text !default;
 $alert-info-border:           $state-info-border !default;
 
 $alert-warning-bg:            $state-warning-bg !default;
-$alert-warning-text:          #fff !default;
+$alert-warning-text:          $state-warning-text !default;
 $alert-warning-border:        $state-warning-border !default;
 
 $alert-danger-bg:             $state-danger-bg !default;
-$alert-danger-text:           #fff !default;
+$alert-danger-text:           $state-danger-text !default;
 $alert-danger-border:         $state-danger-border !default;
 
 
@@ -514,7 +514,7 @@ $list-group-active-border:    $list-group-active-bg !default;
 
 $list-group-link-color:          $gray !default;
 $list-group-link-heading-color:  $gray !default;
-$list-group-active-text-color:   $gray-light  !default;
+$list-group-active-text-color:   $component-active-color  !default;
 
 $list-group-disabled-color:      $gray-light !default;
 $list-group-disabled-bg:         $gray-lighter !default;

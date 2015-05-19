@@ -3,6 +3,7 @@
 //= require turbolinks
 //= require nprogress
 //= require nprogress-turbolinks
+//= require holder
 //= require selectize
 //= require bootstrap
 //= require simple_form_extension

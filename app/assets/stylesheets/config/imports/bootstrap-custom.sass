@@ -46,31 +46,46 @@
   outline-offset: 0
 
 @mixin button-hover-focus-active($color-border, $color-bg) 
-  +box-shadow(0px -2px $color-border inset)
+  position: relative
+  +box-shadow(0px 4px darken($color-border, 10%) )
+  +single-transition(none)
   &:hover
-    +box-shadow(0px -2px darken($color-border, 12%) inset)
-    background-color: darken($color-bg, 2%)
+    top: 2px
+    +box-shadow(0px 2px darken($color-border, 10%) )
+    background-color: $color-bg
+    border-color: $color-border
   &:focus,
   &:active,
   &.active,
   .open &.dropdown-toggle
-    background-color: darken($color-bg, 2%)
-    +box-shadow(0px -1px 5px $color-border inset)  
+    background-color: $color-bg
+    top: 4px
+    +box-shadow(0px 0 darken($color-border, 10%))  
+    border-color: $color-border
 
 @mixin button-variant-inverse($color-border, $color-bg) 
   color: $color-border
   background-color: transparent
-  &:hover,
-  &:focus,
-  &:active,
-  &.active,
-  .open &.dropdown-toggle
+  +box-shadow(none)
+  +single-transition(all, .2s, linear)
+  &:hover
+    +box-shadow(none)
+    top: 0
     color: #fff
     background-color: $color-bg
     outline: none
     outline: 0
-
-    
+  &:focus,
+  &:active,
+  &.active,
+  .open &.dropdown-toggle
+    +box-shadow(none)
+    top: 0
+    color: #fff
+    background-color: darken($color-bg, 5%)
+    outline: none
+    outline: 0
+        
 .btn, 
 input,
 textarea,
@@ -91,13 +106,13 @@ button
   +button-hover-focus-active($btn-default-border, $btn-default-bg) 
   &.btn-inverse
     +button-variant-inverse($btn-default-border, $btn-default-bg)
-    color: darken($btn-default-border, 15%)
+    color: $btn-default-color
     &:hover,
     &:focus,
     &:active,
     &.active,
     .open &.dropdown-toggle
-      color: darken($btn-default-border, 15%)
+      color: $btn-default-color
 
 .btn-primary
   +button-hover-focus-active($btn-primary-border, $btn-primary-bg) 
@@ -200,17 +215,16 @@ button
     border: 1px solid $btn-info-border
     color: $btn-info-bg
 
-// // ------------------------ List  ------------------------- //    
-.list-group
-  .list-group-item,
-  a.list-group-item
-    &.list-group-item-success,
-    &.list-group-item-danger,
-    &.list-group-item-warning,
-    &.list-group-item-info
-      color: #fff
-
 // // ------------------------ Form  ------------------------- //
+
+.input-group-btn
+  .btn,
+  .btn:hover,
+  .btn:focus,
+  .btn:active,
+    top: 0
+    +box-shadow(none)
+
 .radio-inline,
 .checkbox-inline
   margin-right: 15px

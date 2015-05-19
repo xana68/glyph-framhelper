@@ -5,7 +5,7 @@
     = form.input :title
     = form.input :caption
     = form.input :url
-    = form.input :category_id, :as => :selectize, :collection => Category.order(name: :asc)
+    = form.input :category, :as => :selectize, :collection => Category.order(name: :asc)
     = form.input :tag_list, input_html: { class: 'selectize-tags' }
 
   = form.actions

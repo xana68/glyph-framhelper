@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/Compass/compass-rails.git
+  revision: b7b7d974f141481c750cea4ae11d2068d58c31c0
+  branch: 2-0-stable
+  specs:
+    compass-rails (2.0.0.pre)
+      compass (>= 0.12.2)
+      sass-rails (<= 5.0.1)
+      sprockets (<= 2.11.0)
+
+GIT
   remote: git://github.com/glyph-fr/active_decorator.git
   revision: 5b9b587ab12fb15b9e0982cab48fb3e3d3d8b329
   branch: dev
@@ -22,15 +32,15 @@ GIT
 
 GIT
   remote: git://github.com/glyph-fr/share_buttons.git
-  revision: 90d52a9bb0d8d39e8766a56d0df006e3495dc6af
+  revision: 6e543659514e338c873de9b07cf65b6567d3e52a
   specs:
-    share_buttons (0.0.1)
+    share_buttons (1.0.0)
       rails (~> 4.0)
       zeroclipboard-rails (~> 0.0.13)
 
 GIT
   remote: git://github.com/para-cms/para.git
-  revision: 61eb97260b118434f201a098090886ef9778c358
+  revision: 21f9d89c7d16f1bd7c616a901880aeef68bff35f
   specs:
     para (0.3.1)
       active_decorator
@@ -60,7 +70,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/simple_form.git
-  revision: a28012bf2f2aa6dabd2b1efd5a306279cb3c885e
+  revision: 7cb9d0252a8473e2e867e996b6194bf9c24f4ce1
   specs:
     simple_form (3.1.0)
       actionpack (~> 4.0)
@@ -174,8 +184,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.19)
-    compass-rails (2.0.0)
-      compass (>= 0.12.2)
     compass-rgbapng (0.2.1)
       chunky_png (>= 0.8.0)
       compass (>= 0.10.0)
@@ -232,17 +240,17 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.9.3)
-    lograge (0.3.1)
+    lograge (0.3.2)
       actionpack (>= 3)
       activesupport (>= 3)
       railties (>= 3)
-    loofah (2.0.1)
+    loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.4.3)
+    mime-types (2.5)
     mini_portile (0.6.2)
-    minitest (5.6.0)
+    minitest (5.6.1)
     modernizr-rails (2.7.1)
     multi_json (1.11.0)
     net-scp (1.2.1)
@@ -250,19 +258,19 @@ GEM
     net-ssh (2.9.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    nokogumbo (1.2.0)
+    nokogumbo (1.4.1)
       nokogiri
-    nprogress-rails (0.1.6.6)
+    nprogress-rails (0.1.6.7)
     orm_adapter (0.5.0)
     paperclip (4.2.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    pg (0.18.1)
+    pg (0.18.2)
     polyamorous (1.2.0)
       activerecord (>= 3.0)
-    rack (1.6.0)
+    rack (1.6.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.0)
@@ -311,10 +319,10 @@ GEM
     rspec-support (3.2.2)
     ruby_parser (3.6.6)
       sexp_processor (~> 4.1)
-    sanitize (3.1.2)
-      crass (~> 1.0.1)
+    sanitize (4.0.0)
+      crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
-      nokogumbo (= 1.2.0)
+      nokogumbo (= 1.4.1)
     sass (3.2.19)
     sass-rails (4.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -327,22 +335,21 @@ GEM
     selectize-rails (0.12.1)
     sepastian-capistrano3-unicorn (0.5.1)
       capistrano (~> 3.0)
-    sexp_processor (4.5.0)
-    simple_form_extension (1.2.15)
+    sexp_processor (4.5.1)
+    simple_form_extension (1.2.20)
       compass-rails
       rails (>= 3.1)
       redactor-rails
       selectize-rails
       simple_form
-      underscore-rails
-    slack-notifier (1.1.0)
-    spring (1.3.4)
-    sprockets (2.11.3)
+    slack-notifier (1.2.0)
+    spring (1.3.6)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.4)
+    sprockets-rails (2.3.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
@@ -361,8 +368,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    underscore-rails (1.8.2)
-    unicorn (4.8.3)
+    unicorn (4.9.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -394,7 +400,7 @@ DEPENDENCIES
   capistrano-rails-console
   capistrano-rvm
   coffee-rails (~> 4.0.0)
-  compass-rails
+  compass-rails!
   compass-rgbapng
   devise
   devise-i18n

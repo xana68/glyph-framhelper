@@ -73,7 +73,7 @@ group :development do
 end
 
 gem "modernizr-rails"
-gem "compass-rails"
+gem "compass-rails", github: 'Compass/compass-rails', branch: '2-0-stable'
 gem "compass-rgbapng", require: "rgbapng"
 gem "font-awesome-rails"
 gem "bootstrap-sass", "~> 3.2.0"
@@ -93,4 +93,5 @@ gem "bootstrap-kaminari-views", ">= 0.0.5"
 
 # Gems ajoutées
 gem 'para', github: 'para-cms/para'
+# gem 'para', path: '~/gems/para'
 # gem 'form_verification', github: 'glyph-fr/form_verification'
