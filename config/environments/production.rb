@@ -4,22 +4,9 @@ Rails.application.configure do
 
   config.lograge.enabled = true
 
-  config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.default_url_options = { host: "glyph_application_helper.glyph.fr" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "glyph-framhelper.herokuapp.com" }
   
-  # Exception notifier
-  GlyphApplicationHelper::Application.config.middleware.use ExceptionNotification::Rack,
-    email: {
-      email_prefix: "[GlyphApplicationHelper Staging] ",
-      sender_address: %{GlyphApplicationHelper Staging Exceptions <exceptions@glyph.fr>},
-      exception_recipients: %w{issues@glyph.fr},
-      email_format: :html
-    },
-    slack: {
-      team: 'glyph',
-      token: 'hIRUFczE9acwFr89993Gp0f0'
-    }
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

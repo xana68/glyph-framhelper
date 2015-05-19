@@ -23,9 +23,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,30 +42,24 @@ gem "simple_form", github: "plataformatec/simple_form"
 gem "simple_form_extension"
 gem "meta_tags", github: "vala/meta_tags"
 gem "share_buttons", github: "glyph-fr/share_buttons"
-gem "unicorn"
-gem "unicorn-rails"
-gem "dotenv-rails"
-
-group :development do
-  gem "capistrano", "~> 3.1", require: false
-  gem "capistrano-rails", "~> 1.1", require: false
-  gem "capistrano-rails-console", require: false
-  gem "capistrano-bundler", "~> 1.1.2", require: false
-  gem "capistrano-rvm", require: false
-  gem "capistrano-db-tasks", require: false
-  gem "sepastian-capistrano3-unicorn", require: false
-end
 
 gem "whenever"
+
 group :production, :staging do
-  gem "exception_notification", github: "glyph-fr/exception_notification"
-  gem "slack-notifier"
+  gem 'heroku-deflater'
+  gem 'passenger'
+  gem 'unicorn'
+  gem 'exception_notification', github: 'glyph-fr/exception_notification'
+  gem 'slack-notifier'
+  gem 'rails_12factor'
   gem 'lograge'
 end
 
 group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
+  gem 'thin'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'spring'
   gem "quiet_assets", github: "glyph-fr/quiet_assets"
 end
 
@@ -90,6 +81,8 @@ gem "friendly_id", "~> 5.0"
 gem "rolify", "~> 3.4"
 gem "ransack", ">= 1.4.1"
 gem "bootstrap-kaminari-views", ">= 0.0.5"
+
+gem 'newrelic_rpm'
 
 # Gems ajoutées
 gem 'para', github: 'para-cms/para'
