@@ -75,7 +75,7 @@ input[type=checkbox]:focus + .checkbox-icon:before
   &:before
     +fontAwesome
     content: "\f096"
-    color: $input-border
+    color: darken($input-border, 10%)
 
 input[type=radio]:checked + label.radio_buttons:before,
 input[type=radio]:checked + .radio-icon:before
@@ -93,7 +93,7 @@ input[type=radio]:focus + .radio-icon:before
   &:before
     +fontAwesome
     content: "\f10c"
-    color: $input-border
+    color: darken($input-border, 10%)
 
 // INLINE OVERRIDE //
 .radio-inline,
