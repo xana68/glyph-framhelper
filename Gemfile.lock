@@ -31,6 +31,14 @@ GIT
       railties (>= 3.1, < 5.0)
 
 GIT
+  remote: git://github.com/glyph-fr/redactor-rails.git
+  revision: aa1c6cdfb476bed909fd48b1f4f361ba2dcfff32
+  specs:
+    redactor-rails (0.6.0)
+      mime-types
+      orm_adapter
+
+GIT
   remote: git://github.com/glyph-fr/share_buttons.git
   revision: 6e543659514e338c873de9b07cf65b6567d3e52a
   specs:
@@ -39,8 +47,23 @@ GIT
       zeroclipboard-rails (~> 0.0.13)
 
 GIT
-  remote: git://github.com/para-cms/para.git
-  revision: 39a09d834890107b7627cfc6caf5cc38318e9364
+  remote: git://github.com/plataformatec/simple_form.git
+  revision: 7cb9d0252a8473e2e867e996b6194bf9c24f4ce1
+  specs:
+    simple_form (3.1.0)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
+
+GIT
+  remote: git://github.com/vala/meta_tags.git
+  revision: 3fbde777391582230decdd4fa442f0dee42a0d13
+  specs:
+    meta_tags (0.2.0)
+      sanitize
+      truncate_html
+
+PATH
+  remote: ~/gems/para
   specs:
     para (0.3.2)
       active_decorator
@@ -67,30 +90,6 @@ GIT
       simple_form (~> 3.1)
       simple_form_extension
       truncate_html
-
-GIT
-  remote: git://github.com/plataformatec/simple_form.git
-  revision: 7cb9d0252a8473e2e867e996b6194bf9c24f4ce1
-  specs:
-    simple_form (3.1.0)
-      actionpack (~> 4.0)
-      activemodel (~> 4.0)
-
-GIT
-  remote: git://github.com/vala/meta_tags.git
-  revision: 3fbde777391582230decdd4fa442f0dee42a0d13
-  specs:
-    meta_tags (0.2.0)
-      sanitize
-      truncate_html
-
-GIT
-  remote: git://github.com/xana68/redactor-rails.git
-  revision: aa1c6cdfb476bed909fd48b1f4f361ba2dcfff32
-  specs:
-    redactor-rails (0.6.0)
-      mime-types
-      orm_adapter
 
 GEM
   remote: https://rubygems.org/

@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem "devise"
 gem "devise-i18n"
 gem "kaminari"
-gem "redactor-rails", github: "xana68/redactor-rails"
+gem "redactor-rails", github: "glyph-fr/redactor-rails"
 gem "simple_form", github: "plataformatec/simple_form"
 gem "simple_form_extension"
 gem "meta_tags", github: "vala/meta_tags"

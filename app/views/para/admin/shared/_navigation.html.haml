@@ -1,0 +1,58 @@
+%ul.sidebar-navigation
+  %li.brand-logo
+    = link_to para.admin_path do
+      = t('para.admin.title')
+    %a.x-navigation-control{:href => "#"}
+  
+  - if @component_sections.any?
+    - @component_sections.each do |component_section|
+      %li.component-section-item
+        = link_to "#", class: 'component-section-title' do
+          = component_section.name
+
+        %ul.component-section-list-items
+          - component_section.components.each do |component|
+            - active = request.fullpath.split('/')[3] == component.slug
+            %li.component-item{ class: active && 'active' }
+              = link_to component.name, component.path
+
+  - else
+    %li.component-section-item
+      .component-section-title
+        = t('para.component.none_created')
+
+  %li.component-section-item
+    = link_to "#", class: 'component-section-title' do
+      Layouts
+    %ul.component-section-list-items
+      %li.component-item
+        = link_to "Frame Left column", main_app.admin_iframe_left_column_path
+      %li.component-item
+        = link_to "Frame Right column", main_app.admin_iframe_right_column_path  
+
+  %li.component-section-item
+    = link_to "#", class: 'component-section-title' do
+      Pages
+    %ul.component-section-list-items
+      %li.component-item
+        = link_to main_app.admin_gallery_path do
+          %i.fa.fa-image
+          Gallery
+      %li.component-item
+        = link_to main_app.admin_calendar_path do
+          %i.fa.fa-calendar
+          Calendar
+      %li.component-item
+        = link_to main_app.admin_faq_path do
+          %i.fa.fa-question-circle
+          Faq
+
+  %li.component-section-item
+    = link_to "#", class: 'component-section-title' do
+      UI
+
+    %ul.component-section-list-items
+      %li.component-item  
+        = link_to main_app.admin_ui_kits_path do
+          %i.fa.fa-cogs
+          Ui Kits

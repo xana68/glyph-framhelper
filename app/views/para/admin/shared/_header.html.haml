@@ -1,0 +1,33 @@
+%ul.navigation-horizontal{ data: { header: true } }
+  %li.brand-logo
+    = link_to para.admin_path do
+      = t('para.admin.title')
+  %li
+    = link_to main_app.root_path do
+      %i.fa.fa-long-arrow-left
+      = t('para.admin.back_to_app')
+
+  %li.pull-right
+    = link_to main_app.destroy_admin_user_session_path, method: 'delete' do
+      %i.fa.fa-power-off
+      = t('para.admin.sign_out')
+
+  %li.xn-icon-button.pull-right
+    = link_to main_app.admin_faq_path do
+      %i.fa.fa-question-circle 
+      
+  / LANG BAR
+  %li.xn-icon-button.pull-right.dropdown
+    %a{ :href => "#", data: { toggle: "dropdown" } }
+      %i.fa.fa-globe
+    %ul.dropdown-menu.animated.zoomIn
+      %li
+        %a{:href => "#"}
+          %i.fa.fa-flag
+          English
+      %li
+        %a{:href => "#"}
+          %i.fa.fa-flag-o
+          French
+      
+  / END LANG BAR
