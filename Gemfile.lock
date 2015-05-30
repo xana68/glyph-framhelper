@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: git://github.com/para-cms/para.git
-  revision: 163a2c19c1c77c032ef0aabce5cd301d711a8d46
+  revision: 441fe8038116aff6a518325d78e4b577bc38e339
   specs:
     para (0.3.3)
       active_decorator

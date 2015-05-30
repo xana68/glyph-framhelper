@@ -1,7 +1,7 @@
 en:
   # Navigation
   nav:
-    toggle_navigation: "Menu"
+    toggle_navigation: "Open Menu"
     home: "Home"
 
   # outdatedbrowser
