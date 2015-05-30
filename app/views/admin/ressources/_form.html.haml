@@ -1,0 +1,9 @@
+= para_form_for(resource) do |form|
+  = form.fieldset do
+    = form.input :title
+    = form.input :caption
+    = form.input :url
+    = form.input :tags, :as => :selectize, collection: ActsAsTaggableOn::Tag.order(name: :asc), creatable: true
+    = form.input :category, :as => :selectize, :collection => Category.order(name: :asc)
+
+  = form.actions

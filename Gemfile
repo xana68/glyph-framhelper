@@ -85,6 +85,6 @@ gem "bootstrap-kaminari-views", ">= 0.0.5"
 gem 'newrelic_rpm'
 
 # Gems ajoutées
-gem 'para', github: 'para-cms/para'
-# gem 'para', path: '~/gems/para'
+# gem 'para', github: 'para-cms/para'
+gem 'para', path: '~/gems/para'
 # gem 'form_verification', github: 'glyph-fr/form_verification'
