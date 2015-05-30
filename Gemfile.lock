@@ -47,23 +47,8 @@ GIT
       zeroclipboard-rails (~> 0.0.13)
 
 GIT
-  remote: git://github.com/plataformatec/simple_form.git
-  revision: 7cb9d0252a8473e2e867e996b6194bf9c24f4ce1
-  specs:
-    simple_form (3.1.0)
-      actionpack (~> 4.0)
-      activemodel (~> 4.0)
-
-GIT
-  remote: git://github.com/vala/meta_tags.git
-  revision: 3fbde777391582230decdd4fa442f0dee42a0d13
-  specs:
-    meta_tags (0.2.0)
-      sanitize
-      truncate_html
-
-PATH
-  remote: ~/gems/para
+  remote: git://github.com/para-cms/para.git
+  revision: 163a2c19c1c77c032ef0aabce5cd301d711a8d46
   specs:
     para (0.3.3)
       active_decorator
@@ -89,6 +74,22 @@ PATH
       selectize-rails
       simple_form (~> 3.1)
       simple_form_extension
+      truncate_html
+
+GIT
+  remote: git://github.com/plataformatec/simple_form.git
+  revision: 7cb9d0252a8473e2e867e996b6194bf9c24f4ce1
+  specs:
+    simple_form (3.1.0)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
+
+GIT
+  remote: git://github.com/vala/meta_tags.git
+  revision: 3fbde777391582230decdd4fa442f0dee42a0d13
+  specs:
+    meta_tags (0.2.0)
+      sanitize
       truncate_html
 
 GEM
