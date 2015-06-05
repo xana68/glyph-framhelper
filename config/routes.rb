@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  mount Para::Engine, at: '/', as: 'para'
+  para_at '/'
   devise_for :admin_users
+  
   mount RedactorRails::Engine => '/redactor_rails'
 
   root 'home#index'
