@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resource :form_tests, only: :show
   resource :ressources, only: :show
+  resource :newsletters, only: :show
 
   namespace :admin do
     get 'iframe_left_column' => 'theme#iframe_left_column'
