@@ -1,5 +1,5 @@
 class NewslettersController < ApplicationController
-  layout false
+  layout 'newsletter'
 
   def show
   end

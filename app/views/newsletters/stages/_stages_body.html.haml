@@ -1,0 +1,88 @@
+// BEGIN BODY STAGES
+%table.templateGrayBody{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "background-color: #eff3f3;", :width => "100%"}
+  %tr
+    %td{:align => "center", :valign => "top"}
+
+      %table.templateContainer{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "600"}
+        %tr
+          %td.bodyContainer{:style => "padding-top:10px; padding-bottom:10px;", :valign => "top"}
+
+            // BEGING STAGES TITLE
+            %table.mcnTextBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+              %tbody.mcnTextBlockOuter
+                %tr
+                  %td.mcnTextBlockInner{:valign => "top"}
+
+                    %table.mcnTextContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => "366"}
+                      %tbody
+                        %tr
+                          %td.mcnTextContent{:style => "padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:0;", :valign => "top"}
+                            %h2 STAGES
+                            %span{ style: "border-bottom: 2px solid #fc1200; display: block; width: 50px; padding-top: 10px;" }
+
+                    %table.mcnTextContentContainer{:align => "right", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => "197"}
+                      %tbody
+                        %tr
+                          %td.mcnTextContent{:style => "padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:0;", :valign => "top"}
+
+                            %table.mcnButtonBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                              %tbody.mcnButtonBlockOuter
+                                %tr
+                                  %td.mcnButtonBlockInner{:align => "center", :style => "padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;", :valign => "top"}
+
+                                    %table.mcnButtonContentContainer{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate !important;border: 1px solid #010101;border-radius: 0px;"}
+                                      %tbody
+                                        %tr
+                                          %td.mcnButtonContent{:align => "center", :style => "font-family: Arial; font-size: 13px; padding: 10px;", :valign => "middle"}
+                                            %a.mcnButton{:href => "http://www.lespritdujudo.com", :style => "font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #010101; text-transform: uppercase;", :target => "_blank", :title => "VOIR + DE STAGE"} VOIR + DE STAGES
+            // END STAGES TITLE
+            // BEGING STAGES HEAD
+            %table.mcnCaptionBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+              %tbody.mcnCaptionBlockOuter
+                %tr
+                  %td.mcnCaptionBlockInner{:style => "padding:9px;", :valign => "top"}
+
+                    %table.mcnCaptionRightContentOuter{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                      %tbody
+                        %tr
+                          %td.mcnCaptionRightContentInner{:style => "padding:0 9px ;", :valign => "top"}
+
+                            %table.mcnCaptionRightImageContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
+                              %tbody
+                                %tr
+                                  %td.mcnCaptionRightImageContent{:valign => "top"}
+                                    %img.mcnImage{:alt => "", :src => "#{image_path('newsletter/a-la-une-image.png')}", :style => "max-width:242px; border: 10px solid #FFFFFF", :width => "242"}/
+
+                            %table.mcnCaptionRightTextContentContainer{:align => "right", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => "264"}
+                              %tbody
+                                %tr
+                                  %td.mcnTextContent{:valign => "top"}
+                                    %h3
+                                      31E STAGE INTERNATIONAL DE MONTPELLIER
+                                    %br/
+                                    Du 13 au 17 juillet
+                                    %br
+                                    au Palais des Sports René-Bougnol
+                                    %br
+                                    www.stagejudo.org
+                                    %br
+                                    %br
+                                    %span{ style: "color: #000000" }
+                                      Encadrement assuré par Hiroshi KATANISHI, 8e dan, Expert de l’Université de Tenri (Japon) et ancien entraîneur national, Jane BRIDGE, 7e dan, championne d’Europe et du Monde, Frédéric DAMBACH, 5e dan, ancien international... 
+                                    %br
+                                    %br
+                                    %strong
+                                      %a{:href => "http://www.lespritdujudo.com", :target => "_blank"} EN SAVOIR PLUS
+            // END STAGES HEAD
+
+            = render partial: 'newsletters/stages/stage_item'
+
+            = render partial: 'newsletters/divider'            
+
+            = render partial: 'newsletters/stages/stage_item'
+
+            = render partial: 'newsletters/divider'            
+
+            = render partial: 'newsletters/stages/stage_item'
+            
+// END BODY STAGE
