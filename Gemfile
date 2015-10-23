@@ -39,7 +39,7 @@ gem "devise-i18n"
 gem "kaminari"
 gem "redactor-rails", github: "glyph-fr/redactor-rails"
 gem "simple_form", github: "plataformatec/simple_form"
-gem "simple_form_extension", path: "~/gems/simple_form_extension"
+gem "simple_form_extension"
 gem "meta_tags", github: "vala/meta_tags"
 gem "share_buttons", github: "glyph-fr/share_buttons"
 
